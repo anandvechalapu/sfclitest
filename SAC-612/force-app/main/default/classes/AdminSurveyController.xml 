@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexClass xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>45.0</apiVersion>
+    <status>Active</status>
+    <description>Apex class to create surveys with basic information, target users, criteria fields, and question and answer sections. </description>
+    <label>AdminSurveyController</label>
+    <packageVersions>
+        <majorNumber>45</majorNumber>
+        <minorNumber>0</minorNumber>
+        <namespace>DRL</namespace>
+    </packageVersions>
+    <triggerOverrides>
+        <triggerTypes>
+            <name>Survey</name>
+        </triggerTypes>
+    </triggerOverrides>
+    <triggers>
+        <trigger>AdminSurveyTrigger.trigger</trigger>
+    </triggers>
+    <methods>
+        <name>createSurvey</name>
+        <name>updateSurvey</name>
+        <name>getSurveyDetails</name>
+        <name>getSurveyReport</name>
+        <name>cancelSurvey</name>
+        <name>deleteSurvey</name>
+    </methods>
+</ApexClass>
